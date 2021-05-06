@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Appointment Form</title>
+</head>
+<body>
+    <h1>Patient Appointment Request Form</h1>
+    <form action="mailto:nayakriyarbl@gmail.com" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Requestor Information</legend>
+          <p>Name</p>
+          <select name="Title">
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Miss">Miss</option>
+          </select>
+          <input type="text" name="name" value="first">
+          <input type="text" name="name" value="last">
+          <p>Requester Social Security Number</p>
+          <input type="password" id="security number" name="password">
+          <p>Requestor Email</p>
+          <input type="email" id="email" name="email">
+          <p>Requestor Phone Number</p>
+          <input type="tel" id="number" name="mobile number" maxlength="10">          
+      </fieldset>
+       <fieldset>
+         <legend>Patient Information</legend>
+         <p>Patient Gender</p>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+         <p>Patient Name</p>
+            <select name="Title">
+               <option value="Mr.">Mr.</option>
+               <option value="Mrs.">Mrs.</option>
+               <option value="Miss">Miss</option>
+            </select>
+            <input type="text" name="name" value="first">
+            <input type="text" name="name" value="last">
+         <p>Pateint Date of Birth</p>
+            <input type="date" id="DOB" name="birth date">
+         <table>
+             <tr>
+                 <td>Pateint Social Security Number</td>
+                 <td>Patient Email</td>
+             </tr>
+             <tr>
+                 <td><input type="password" id="security number" name="password"></td>
+                 <td><input type="email" id="email" name="email"></td>
+             </tr>
+         </table>
+         <table>
+             <tr>
+             <td>Pateint Phone Number</td>
+             <td>Pateient Alternate Phone Number</td>
+             <tr>
+                 <td><input type="tel" id="number" name="mobile number" maxlength="10"></td>
+                 <td><input type="tel" id="number" name="mobile number" maxlength="10"></td>             
+            </tr>
+         </table>
+         <p>Patient Address of Residence</p>
+         <input type="text" value="Street Address" name="Address" wide="50">
+         <table>
+             <tr>
+                 <td><input type="text" name="city" value="City"></td>
+                 <td><select name="state">
+                     <option value="Delhi">Delhi</option>
+                     <option value="Goa">Goa</option>
+                     <option value="Himachal Pradesh">Himachal Pradesh</option>
+                     <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                     <option value="Orissa">Orissa</option>
+                     <option value="Tamil Nadu">Tamil Nadu</option>
+                     <option value="Uttar Pradesh">Uttar Pradesh</option>
+                     <option value="West Bengal">West Bengal</option>
+                 </select>
+                 </td>
+             </tr>
+             <tr>
+                 <td><input type="text" value="Pin Code" name="pin code" maxlength="6"></td>
+                 <td><input type="text" value="Country" name="country"></td>
+             </tr>
+         </table>
+         <p>Patient Marital Status</p>
+         <input type="radio" name="Status">Single
+         <input type="radio" name="Status">Married
+         <input type="radio" name="Status">Widowed 
+        </fieldset>
+        <fieldset>
+            <legend>Medical Information</legend>
+            <p>Patient Last Medical Report: <input type="file" name="medical report"></p>
+            <p>Select the illness you are suffering from:</p>  
+          <select name="illness" multiple="multiple">
+            <option value="cold">Cold</option>
+            <option value="fever">Fever</option>
+            <option value="bodyache">Bodyache</option>
+            <option value="dizziness">Dizziness</option>
+            <option value="nausea">Nausea</option>
+          </select> 
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
